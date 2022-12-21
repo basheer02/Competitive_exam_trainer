@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_gk"
+        android:title="General Knowledge" />
+    <item
+        android:id="@+id/nav_science"
+        android:title="Science" />
+    <item
+        android:id="@+id/nav_english"
+        android:title="English" />
+    <item
+        android:id="@+id/nav_maths"
+        android:title="Maths" />
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@mipmap/logout"
+        android:iconTint="@color/cardview_light_background"
+        android:title="Logout" />
+</menu>

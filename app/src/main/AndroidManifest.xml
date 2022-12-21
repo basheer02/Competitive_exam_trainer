@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.competitiveexamtrainer">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".mainFrames.SelectLogin"></activity>
+        <activity
+            android:name=".Maths.Maths_QPapers"
+            android:parentActivityName=".Maths.Maths" />
+        <activity
+            android:name=".Maths.Maths_Rank"
+            android:parentActivityName=".Maths.Maths" />
+        <activity
+            android:name=".Maths.Maths_Quiz"
+            android:parentActivityName=".Maths.Maths" />
+        <activity
+            android:name=".English.English_QPapers"
+            android:parentActivityName=".English.English" />
+        <activity
+            android:name=".English.English_Rank"
+            android:parentActivityName=".English.English" />
+        <activity
+            android:name=".English.English_Quiz"
+            android:parentActivityName=".English.English" />
+        <activity
+            android:name=".Maths.Maths_Concept2"
+            android:parentActivityName=".Maths.Maths" />
+        <activity
+            android:name=".Maths.Maths_Concept1"
+            android:parentActivityName=".Maths.Maths" />
+        <activity
+            android:name=".English.English_Concept2"
+            android:parentActivityName=".English.English" />
+        <activity
+            android:name=".English.English_Concept1"
+            android:parentActivityName=".English.English" />
+        <activity
+            android:name=".Science.Physics.Physics_Concept2"
+            android:parentActivityName=".Science.Physics.Physics" />
+        <activity
+            android:name=".Science.Physics.Physics_Concept1"
+            android:parentActivityName=".Science.Physics.Physics" />
+        <activity
+            android:name=".Science.Chemistry.Chemistry_Concept2"
+            android:parentActivityName=".Science.Chemistry.Chemistry" />
+        <activity
+            android:name=".Science.Chemistry.Chemistry_Concept1"
+            android:parentActivityName=".Science.Chemistry.Chemistry" />
+        <activity
+            android:name=".English.English"
+            android:parentActivityName=".mainFrames.MainActivity2" />
+        <activity
+            android:name=".Maths.Maths"
+            android:parentActivityName=".mainFrames.MainActivity2" />
+        <activity
+            android:name=".Science.Physics.Physics"
+            android:parentActivityName=".Science.Science" />
+        <activity
+            android:name=".Science.Science"
+            android:parentActivityName=".mainFrames.MainActivity2" />
+        <activity
+            android:name=".Science.Chemistry.Chemistry"
+            android:parentActivityName=".Science.Science" />
+        <activity
+            android:name=".Science.Science_QPapers"
+            android:parentActivityName=".Science.Science" />
+        <activity
+            android:name=".Science.Science_Rank"
+            android:parentActivityName=".Science.Science" />
+        <activity
+            android:name=".Science.Science_Quiz"
+            android:parentActivityName=".Science.Science" />
+        <activity
+            android:name=".Admin.Admin_Upload_QPapers"
+            android:parentActivityName=".Admin.Admin_Home" />
+        <activity
+            android:name=".generalKnowledge.GK_Rank"
+            android:parentActivityName=".generalKnowledge.GeneralKnowledge" />
+        <activity
+            android:name=".Admin.Admin_Upload_Quiz"
+            android:parentActivityName=".Admin.Admin_Home" />
+        <activity
+            android:name=".Science.Biology.Biology_Concept2"
+            android:parentActivityName=".Science.Biology.Biology" />
+        <activity
+            android:name=".Science.Biology.Biology_Concept1"
+            android:parentActivityName=".Science.Biology.Biology" />
+        <activity
+            android:name=".Science.Biology.Biology"
+            android:parentActivityName=".Science.Science" />
+        <activity
+            android:name=".Admin.Admin_Upload_Contents"
+            android:parentActivityName=".Admin.Admin_Home" />
+        <activity android:name=".Admin.Admin_Home" />
+        <activity android:name=".Admin.Admin_login" />
+        <activity
+            android:name=".generalKnowledge.first_in_india.FirstinIndia_concept3"
+            android:parentActivityName=".generalKnowledge.first_in_india.FirstinIndia" />
+        <activity
+            android:name=".generalKnowledge.first_in_india.FirstinIndia_concept2"
+            android:parentActivityName=".generalKnowledge.first_in_india.FirstinIndia" />
+        <activity
+            android:name=".generalKnowledge.first_in_india.FirstinIndia_concept1"
+            android:parentActivityName=".generalKnowledge.first_in_india.FirstinIndia" />
+        <activity
+            android:name=".generalKnowledge.first_in_india.FirstinIndia"
+            android:parentActivityName=".generalKnowledge.GeneralKnowledge" />
+        <activity
+            android:name=".generalKnowledge.gk_previousQeustionPapers"
+            android:parentActivityName=".generalKnowledge.GeneralKnowledge" />
+        <activity
+            android:name=".generalKnowledge.indian_economy.indian_economy_concept2"
+            android:parentActivityName=".generalKnowledge.indian_economy.Indian_Economy" />
+        <activity
+            android:name=".generalKnowledge.indian_economy.indian_economy_concept1"
+            android:parentActivityName=".generalKnowledge.indian_economy.Indian_Economy" />
+        <activity
+            android:name=".generalKnowledge.indian_economy.Indian_Economy"
+            android:parentActivityName=".generalKnowledge.GeneralKnowledge" />
+        <activity
+            android:name=".generalKnowledge.gk_quiz"
+            android:parentActivityName=".generalKnowledge.indian_politics.Indian_Politics" />
+        <activity
+            android:name=".generalKnowledge.indian_politics.indian_politics_concept3"
+            android:parentActivityName=".generalKnowledge.indian_politics.Indian_Politics" />
+        <activity
+            android:name=".generalKnowledge.indian_politics.indian_politics_concept2"
+            android:parentActivityName=".generalKnowledge.indian_politics.Indian_Politics" />
+        <activity
+            android:name=".generalKnowledge.indian_politics.indian_politics_concept1"
+            android:parentActivityName=".generalKnowledge.indian_politics.Indian_Politics" />
+        <activity
+            android:name=".generalKnowledge.indian_politics.Indian_Politics"
+            android:parentActivityName=".generalKnowledge.GeneralKnowledge" />
+        <activity
+            android:name=".generalKnowledge.culture_history.culture_history_Concept3"
+            android:parentActivityName=".generalKnowledge.culture_history.Culture_History" />
+        <activity
+            android:name=".generalKnowledge.culture_history.culture_history_Concept2"
+            android:parentActivityName=".generalKnowledge.culture_history.Culture_History" />
+        <activity
+            android:name=".generalKnowledge.culture_history.culture_history_Concept1"
+            android:parentActivityName=".generalKnowledge.culture_history.Culture_History" />
+        <activity
+            android:name=".generalKnowledge.culture_history.Culture_History"
+            android:parentActivityName=".generalKnowledge.GeneralKnowledge" />
+        <activity
+            android:name=".generalKnowledge.day_year.Day_Year_Concept"
+            android:parentActivityName=".generalKnowledge.day_year.Day_Year" />
+        <activity
+            android:name=".generalKnowledge.day_year.Day_Year"
+            android:parentActivityName=".generalKnowledge.GeneralKnowledge" />
+        <activity
+            android:name=".generalKnowledge.books_authors.Concept_part3"
+            android:parentActivityName=".generalKnowledge.books_authors.BooksandauthorsActivity" />
+        <activity
+            android:name=".generalKnowledge.books_authors.Concept_part2"
+            android:parentActivityName=".generalKnowledge.books_authors.BooksandauthorsActivity" />
+        <activity
+            android:name=".generalKnowledge.books_authors.Concept_Part1"
+            android:parentActivityName=".generalKnowledge.books_authors.BooksandauthorsActivity" />
+        <activity
+            android:name=".generalKnowledge.books_authors.BooksandauthorsActivity"
+            android:parentActivityName=".generalKnowledge.GeneralKnowledge" />
+        <activity
+            android:name=".generalKnowledge.GeneralKnowledge"
+            android:parentActivityName=".mainFrames.MainActivity2" />
+        <activity android:name=".mainFrames.MainActivity2" />
+        <activity android:name=".mainFrames.LoginActivity" />
+        <activity android:name=".mainFrames.RegistrationActivity" />
+        <activity android:name=".mainFrames.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

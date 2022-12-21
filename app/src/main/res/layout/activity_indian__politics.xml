@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#676363"
+    tools:context=".generalKnowledge.indian_politics.Indian_Politics">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true" >
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:src="@drawable/study"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/bt_cp1"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="201dp"
+                android:text="Concept - Part 1"
+                android:textColor="@color/cardview_light_background"
+                android:background="@color/design_default_color_secondary_variant"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/bt_cp2"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="272dp"
+                android:text="Concept - Part 2"
+                android:textColor="@color/design_default_color_secondary_variant"
+                android:background="@color/common_google_signin_btn_text_dark_disabled"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/bt_cp3"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="343dp"
+                android:text="Concept - Part 3"
+                android:textColor="@color/cardview_light_background"
+                android:background="#353333"
+                tools:ignore="MissingConstraints" />
+
+        </FrameLayout>
+
+    </ScrollView>
+
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="64dp"
+        android:elevation="10dp"
+        android:background="@android:color/transparent"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.542" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

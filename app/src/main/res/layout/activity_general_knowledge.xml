@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".generalKnowledge.GeneralKnowledge"
+    android:background="#575555">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true" >
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+    <Button
+        android:id="@+id/bt_books"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Books and Authors"
+        android:textColor="@android:color/background_light"
+        android:background="#77026A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <Button
+        android:id="@+id/bt_days"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="71dp"
+        android:text="Day and Year"
+        android:textColor="@android:color/background_light"
+        android:background="#EF8BAE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt1" />
+    <Button
+        android:id="@+id/bt_history"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="141dp"
+        android:text="@string/culture"
+        android:textColor="@android:color/background_light"
+        android:background="#F89C8C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt2"/>
+    <Button
+        android:id="@+id/bt_politics"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="211dp"
+        android:text="Indian Politics"
+        android:textColor="@android:color/background_light"
+        android:background="#EAB592"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt3"/>
+    <Button
+        android:id="@+id/bt_economy"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="282dp"
+        android:text="Indian Economy"
+        android:textColor="@android:color/background_light"
+        android:background="#F1867C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <Button
+        android:id="@+id/bt_first"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="First in India"
+        android:layout_marginTop="352dp"
+        android:textColor="@android:color/background_light"
+        android:background="#3EC1A3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/bt_quiz"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Model Quiz"
+            android:layout_marginTop="422dp"
+            android:textColor="@android:color/background_light"
+            android:background="#549889"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/bt_rank"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Rank List"
+            android:layout_marginTop="492dp"
+            android:textColor="@android:color/background_light"
+            android:background="#87BFB3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+        android:id="@+id/bt_papers"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="562dp"
+        android:text="Question papers"
+        android:textColor="@android:color/background_light"
+        android:background="#006296"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+    </FrameLayout>
+    </ScrollView>
+
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="64dp"
+        android:elevation="10dp"
+        android:outlineAmbientShadowColor="@color/design_default_color_primary"
+        android:outlineSpotShadowColor="@color/cardview_shadow_start_color"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

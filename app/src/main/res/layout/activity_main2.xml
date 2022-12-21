@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#575555"
+    tools:context=".mainFrames.MainActivity2">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:src="@drawable/study" />
+
+            <Button
+            android:id="@+id/btn_gk"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="350dp"
+            android:background="#3C3A3A"
+            android:text="General Knowledge"
+            android:textColor="#FFFFFF"
+             />
+
+            <Button
+                android:id="@+id/btn_science"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="425dp"
+                android:background="#009688"
+                android:text="Science"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btn_english"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="500dp"
+                android:background="#255954"
+                android:text="English"
+                android:textColor="#FFFFFF" />
+
+            <Button
+            android:id="@+id/btn_maths"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="575dp"
+            android:background="#57978D"
+            android:text="Maths"
+            android:textColor="#FFFFFF" />
+
+            <ProgressBar
+                android:id="@+id/loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="64dp"
+                android:layout_marginBottom="64dp"
+                android:background="@android:color/transparent"
+                android:elevation="10dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/frameLayout"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.542" />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+    </ScrollView>
+
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_view"
+        android:background="#252424"
+        app:itemTextColor="@color/cardview_light_background"
+        app:itemIconTint="@color/cardview_light_background"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/main_header"
+        app:menu="@menu/navdrawermenu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

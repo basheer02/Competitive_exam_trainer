@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Science.Science_Rank"
+    android:stretchColumns="1,2,3"
+    android:layout_margin="8dp" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MATHS RANK LIST"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textColor="#F7FAF9"
+        android:background="#009688"/>
+
+    <TableRow>
+        <TextView
+            android:text="RANK"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:background="#B7BABA"
+            android:padding="10dp"
+            android:layout_column="1" />
+
+        <TextView
+            android:layout_column="2"
+            android:padding="10dp"
+            android:text="NAME"
+            android:background="#B7BABA"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+        <TextView
+            android:text="MARK"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:background="#B7BABA"
+            android:padding="10dp"
+            android:layout_column="3" />
+
+    </TableRow>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler_view" />
+
+</TableLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "333121239498",
+    "project_id": "competitive-exam-trainer-77dc6",
+    "storage_bucket": "competitive-exam-trainer-77dc6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:333121239498:android:a0bf5344d692542767b733",
+        "android_client_info": {
+          "package_name": "com.example.competitiveexamtrainer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "333121239498-9v8o2uodpio9lq88cqb6gc9ts2egm4e0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpq-mEcRf4Sdn-5DbJ0mTaI90Nf8b4-gI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "333121239498-9v8o2uodpio9lq88cqb6gc9ts2egm4e0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
